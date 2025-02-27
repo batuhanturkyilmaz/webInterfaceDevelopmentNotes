@@ -1,0 +1,213 @@
+<!DCOTYPE html>
+
+<html>
+<!-- 
+	<html> etiketi, bir HTML belgesinin başlangıcını ve 
+	sonunu belirler. Yani, tüm HTML kodlarının içinde 
+	bulunması gereken ana (root) etikettir. 
+-->
+
+
+	<head>
+	<!-- 
+		<head> etiketi, HTML belgesinin başlık (head) 
+		bölümünü tanımlar ve sayfanın görünmeyen meta 
+		verilerini içerir. 
+	-->	
+
+		<meta charset = "utf-8">
+		<title>WelcomeGuys</title>
+		<!-- title etiketi, HTML belgesinin başlığını belirler ve genellikle tarayıcının sekme başlığında görünür.-->
+
+	</head>
+	<body>
+		<h1>Level 1 Heading </h1>
+		<h4>lEVEL 4 heAdİnG </h4>
+		<!-- 
+			h1 büyük yazıdır ve h6'ya kadar seviyeleri 
+			vardır. En küçük font level 6 heading'dir 
+		-->
+
+
+
+		<p>Welcome to HTML5! <!p>
+		<p>What does that mean? <!p>
+		<!-- <p> yeni bir paragrafı niteler  -->
+
+		<p><strong>. Click a name to visit that site.</strong></p>
+
+		<!-- <strong> yazının kalın yazılıp gösterilmesini sağlar -->
+
+		<p><a href = "https://www.youtube.com">Youtube</a></p>	
+		<!-- 
+		href (Hypertext REFerence), <a> etiketi 
+			içinde bağlantının yönlendireceği URL'yi 
+			belirten bir özelliktir. 
+		-->
+
+
+		<p>
+			To write to <a href = "mailto:deitel@deitel.com"
+			> Deitel & Associates, Inc. </a>, click the 
+			link and your default email client will open an 
+			email message and address it to us.
+		</p>		
+
+		<!-- linking yukarıdaki gibi çalışır. -->
+
+
+
+
+		<p>
+			<img src = "cpphtp.png" width = "220" 
+			height = "200" alt = "C++ how to program book cover" >
+
+			<!-- 
+			HTML'deki <img> etiketi, bir görüntüyü web
+			 sayfasına yerleştirmek için kullanılır. src 
+			 (source) özelliği, görüntünün dosya yolunu 
+			 belirtir; yani hangi dosyanın gösterileceğini
+			  belirler.  
+
+				alt niteliği engelli kullanıcılar 
+				özellikle görme bozuklukları için web 
+				sayfalarını daha erişilebilir hale getirir.
+
+				resmi, gene dosya yolu vererek konumunu belirtebiliriz
+
+			-->
+		</p>
+		
+
+		<p>
+    		<a href="acilacakSayfaHafta3.html">
+        		<img src="click.png" width="150" height="200" alt="Resim Yüklenemedi">
+    		</a>
+		</p>
+			<!-- 
+				üstte yapılanla birlikte tanımlanan link,
+			 	fotoğrafa basıldığında açılacaktır. yani 
+			 	fotoğraf yerine bir adet buton resmi 
+			 	koyulursa basıldığında oraya gidecektir 
+			-->
+
+		<!--
+			1. Temel Özel Karakterler
+				Özel Karakter	HTML Varlığı	Açıklama
+				&	&amp;	Ampersant işareti
+				<	&lt;	Küçüktür işareti
+				>	&gt;	Büyüktür işareti
+				"	&quot;	Çift tırnak
+				'	&apos;	Tek tırnak
+			2. Diğer Özel Karakterler
+				Özel Karakter	HTML Varlığı	Açıklama
+				©	&copy;	Telif hakkı simgesi
+				®	&reg;	Tescilli marka simgesi
+				™	&trade;	Ticari marka simgesi
+				€	&euro;	Euro işareti
+				£	&pound;	Sterlin işareti
+				¥	&yen;	Yen işareti
+			3. Matematiksel İşlemler
+				Özel Karakter	HTML Varlığı	Açıklama
+				±	&plusmn;	Artı-eksi simgesi
+				÷	&divide;	Bölme işareti
+				×	&times;	Çarpma işareti
+				≠	&ne;	Eşit değildir simgesi
+				≈	&asymp;	Yaklaşık eşit simgesi
+			4. Boşluk Karakterleri
+				Özel Karakter	HTML Varlığı	Açıklama
+				&nbsp;	Boşluk (non-breaking space)
+				&thinsp;	İnce boşluk	
+				&emsp;	Geniş boşluk	
+				&ensp;	Yarım geniş boşluk
+
+		 -->
+
+		<h1>Özel Karakterler</h1>
+   		<p>Bu bir ampersant: &amp;</p>
+    	<p>Küçüktür işareti: &lt; 5</p>
+    	<p>Büyüktür işareti: 5 &gt; 3</p>
+    	<p>Telif hakkı: &copy; 2025</p>
+    	<p>Tescilli marka: &reg; MyBrand</p>
+    	<p>Euro işareti: 100 &euro;</p>	
+
+
+    	<!-- <ul> ve <li> Nedir?
+
+    		*<ul> (Unordered List - Sırasız Liste):HTML'de 
+    		    sırasız (madde işaretli) listeler 
+    		    oluşturmak için kullanılır. 
+
+    		*<li> (List Item - Liste Öğesi):<ul> veya <ol> 
+    			içinde kullanılarak her bir liste öğesini belirtir. 
+    		-->
+
+
+    	<h3> alışveriş listesi </h3>
+    	<ul>
+    		<li> Ekmek</li>
+    		<li> Su</li>
+    		<li> Çikulata</li>
+    		<li> pc</li>
+    	</ul>
+
+
+
+    	<h3> Hayvanlar </h3>
+    	<ul>
+    		<li>Memeliler
+    			<ul>
+    				<li>İnsan</li>
+    				<li>Balina</li>
+    				<li>Aslan</li>
+    			</ul>	
+    		</li>
+
+    		<li>Mantarlar
+    			<ul>
+    				<li>Sera mantarı</li>
+    			</ul>
+    		</li>
+    		<li>Bitkiler
+    			<ul>
+    				<li>AĞAÇ REİS</li>
+    				<li>çiçek</li>
+    			</ul>
+    		</li>
+    	</ul>
+
+
+
+    	<!-- 
+			<table> → Tabloyu başlatır.
+			<tr> → Satır oluşturur.
+			<th> → Kalın başlık hücreleri oluşturur.
+			<td> → Veri hücrelerini temsil eder.
+			border="1" → Tabloya kenarlık ekler. 
+		-->
+
+
+    	<table border = "1">
+    		<tr>
+    			<th>AD</th>
+    			<th>Soyad</th>
+    			<th>Yaş</th>
+    		</tr>
+    		<tr>
+    			<th>AHMET</th>
+    			<th>KARA</th>
+    			<th>32</th>
+    		</tr>
+    		<tr>
+    			<th>Kurt<img src="kurt.png" width="30" height="30" alt="kurt">
+    			</th>
+    			<th>Gazi</th>
+    			<th>22</th>
+    		</tr>
+
+    		
+    	</table>
+    	
+			
+	</body>	
+</html>		
